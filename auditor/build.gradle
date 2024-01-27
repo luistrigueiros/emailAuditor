@@ -3,12 +3,6 @@ plugins {
 }
 
 
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
-
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-artemis'
@@ -18,6 +12,3 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
-}
