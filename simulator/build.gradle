@@ -2,10 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '3.2.2' apply false
 }
 
-
-
-
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-artemis'
 	implementation 'org.apache.camel.springboot:camel-spring-boot-starter:4.3.0'
