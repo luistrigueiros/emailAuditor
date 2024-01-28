@@ -1,10 +1,10 @@
 package ie.vhi.emailAuditor;
 
 public interface Email {
-    String toAddress();
-    String fromAddress();
+    String getToAddress();
+    String getFromAddress();
 
-    String subject();
+    String getSubject();
 
-    String content();
+    String getContent();
 }
