@@ -7,9 +7,12 @@ plugins {
 dependencies {
 	implementation project(':common')
 	implementation 'org.apache.activemq:artemis-jakarta-server:2.31.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-artemis'
 //	developmentOnly 'org.springframework.boot:spring-boot-docker-compose'
 	implementation "org.apache.camel.springboot:camel-spring-boot-starter:${camelVersion}"
 	implementation "org.apache.camel:camel-jms:${camelVersion}"
+
+	runtimeOnly 'com.h2database:h2'
 }
 
