@@ -14,5 +14,5 @@ spring:
 simulator:
   dataGeneratorInputEndpoint: "timer:MOCK_DATA?period=5s"
   inputEndpoint: "direct:sendToAuditQueue"
-  outputEndpoint: "jms:queue:EmailAuditQueue"
+  outputEndpoint: "jms:queue:EmailAuditQueue?jmsMessageType=object"
 
