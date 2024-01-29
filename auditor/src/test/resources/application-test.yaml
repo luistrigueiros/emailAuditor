@@ -1,0 +1,1 @@
+inputEndpoint: "seda:queue:EmailAuditQueue"
